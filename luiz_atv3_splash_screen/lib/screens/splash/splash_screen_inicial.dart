@@ -9,29 +9,36 @@ class SplashScreenInicial extends StatefulWidget {
 }
 
 class _SplashScreenInicialState extends State<SplashScreenInicial> {
-  
   @override
-  void initState(){
+  void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 3),(){
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder:(context) => const paginaInicial(),)); 
+        MaterialPageRoute(builder: (context) => const paginaInicial()),
+      );
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Splash screen'),
-            const SizedBox(height: 20),
-            const CircularProgressIndicator(),
-          ],
-        ),
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.asset('assets/images/Bastião.png', fit: BoxFit.cover),
+          ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('Carregano...'),
+                const SizedBox(height: 20),
+                const CircularProgressIndicator(),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

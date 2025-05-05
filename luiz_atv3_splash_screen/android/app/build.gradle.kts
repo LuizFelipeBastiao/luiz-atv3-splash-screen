@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.luiz_atv3_splash_screen"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

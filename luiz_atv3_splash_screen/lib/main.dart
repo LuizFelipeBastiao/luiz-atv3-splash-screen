@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'screens/splash/splash_screen_inicial.dart';
-import 'pages/pagina_inicial.dart';
 
 
-void main() {
+
+void main()  {
+  
+ 
   runApp(const MyApp());
 }
 
