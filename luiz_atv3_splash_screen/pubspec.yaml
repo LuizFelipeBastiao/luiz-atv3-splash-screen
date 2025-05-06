@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   onboarding: ^4.0.2
+  flutter_lints: ^2.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -71,7 +72,16 @@ flutter:
         - asset: assets/fonts/ZF2334Squarish-Regular.otf
     - family: Remix
       fonts:
-        - asset: assets/fonts/Remix.ttf 
+        - asset: assets/fonts/Remix.ttf
+    - family: Outfielder
+      fonts:
+        - asset: assets/fonts/Outfielder-Personal-Use.ttf
+    - family: Academic
+      fonts:
+        - asset: assets/fonts/Academic M54.ttf
+    - family: Aesthetic
+      fonts:
+        - asset: assets/fonts/Aesthetic Moment  Italic Personal Used.ttf
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -89,7 +99,7 @@ flutter:
   # https://flutter.dev/to/asset-from-package
 
   # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
+  # in this "flutter" section. EacAeh entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:

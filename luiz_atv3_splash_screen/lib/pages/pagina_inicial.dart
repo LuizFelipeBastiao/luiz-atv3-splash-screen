@@ -16,7 +16,7 @@ class _PaginaInicialState extends State<PaginaInicial> {
         title: const Text('Página Inicial'),
         
       ),
-      body : boasVindas()
+      body : Stack(children: [boasVindas()]
       
     );
   }

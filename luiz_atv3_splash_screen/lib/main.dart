@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:luiz_atv3_splash_screen/screens/onboarding/onboarding.dart';
 import 'pages/pagina_inicial.dart';
 
 void main() {
@@ -10,8 +11,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: PaginaInicial(), // Substitua pela sua página inicial
+    return const MaterialApp(
+      home: TelaOnboarding(), // Substitua pela sua página inicial
     );
   }
 }
