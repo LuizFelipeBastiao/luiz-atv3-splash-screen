@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:luiz_atv3_splash_screen/screens/welcome/boasvindas.dart';
 
-class paginaInicial extends StatefulWidget {
-  const paginaInicial({super.key});
+class PaginaInicial extends StatefulWidget {
+  const PaginaInicial({super.key});
 
   @override
-  State<paginaInicial> createState() => _paginaInicialState();
+  State<PaginaInicial> createState() => _PaginaInicialState();
 }
 
-class _paginaInicialState extends State<paginaInicial> {
+class _PaginaInicialState extends State<PaginaInicial> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Página Inicial'),
+        
       ),
+      body : boasVindas()
       
     );
   }
