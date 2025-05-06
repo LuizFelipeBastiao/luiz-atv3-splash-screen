@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:luiz_atv3_splash_screen/pages/pagina_inicial.dart';
 
 Widget boasVindas() {
   return Container(
