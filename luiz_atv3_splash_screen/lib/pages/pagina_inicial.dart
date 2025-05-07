@@ -13,16 +13,22 @@ class _PaginaInicialState extends State<PaginaInicial> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Página Inicial'),
-      automaticallyImplyLeading: false,),
+      appBar: AppBar(
+        title: const Text('Página Inicial'),
+        automaticallyImplyLeading: false,
+      ),
+
       body: Stack(
+        //Boas vindas e botão que leva para a tela de onboarding
+        // são separados e empilhados um sobre o outro
         children: [
-          boasVindas(),
+          boasVindas(), // Função que retorna o widget de boas-vindas
           Center(
             child: Column(
               children: [
                 const SizedBox(height: 400),
                 TextButton(
+                  // Botão para ir para a tela de onboarding
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -39,7 +45,6 @@ class _PaginaInicialState extends State<PaginaInicial> {
                   ),
                   child: const Text('Onboarding'),
                 ),
-                
               ],
             ),
           ),

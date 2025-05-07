@@ -21,7 +21,9 @@ class TelaOnboarding3 extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 200),
+
             TextButton(
+              // Botão para voltar para a página inicial
               onPressed: () {
                 Navigator.push(
                   context,
@@ -34,7 +36,7 @@ class TelaOnboarding3 extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 textStyle: const TextStyle(fontSize: 20),
               ),
-              child: Text('Voltar para o inicio'),
+              child: const Text('Voltar para o inicio'),
             ),
           ],
         ),
