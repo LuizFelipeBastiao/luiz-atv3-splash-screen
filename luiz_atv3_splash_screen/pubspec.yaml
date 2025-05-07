@@ -47,11 +47,12 @@ dev_dependencies:
   flutter_native_splash: ^2.2.12 
 
 flutter_native_splash:
-    color: "#ffffff"
-    image: assets/images/Bastião.png
-    android_12: 
-      image: assets/images/Bastião.png
-    android: true
+    android : true
+    ios : true
+    
+    background_image: assets/images/launch_image.png
+    android_12:
+      image: assets/images/launch_image.png
     
 
   # The "flutter_lints" package below contains a set of recommended lints to

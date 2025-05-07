@@ -6,44 +6,28 @@ Widget boasVindas() {
     child: const Center(
       child: Column(
         children: [
+          SizedBox(height: 100),
           Text(
-            'Bem vindo!',
-            style: TextStyle(
-              fontSize: 50,
-              fontFamily: 'Academic',
-              color: Color.fromARGB(255, 147, 194, 191),
-            ),
-          ),
-          Text(
+
             'Bem vindo!',
             style: TextStyle(
               fontSize: 50,
               fontFamily: 'Remix',
-              color: Color.fromARGB(255, 147, 194, 191),
+              color: Color.fromARGB(255, 255, 255, 255),
             ),
           ),
-          Text(
-            'Bem vindo!',
+          SizedBox(height: 20),
+          Text('Clique no botão abaixo para iniciar o Onboarding',
             style: TextStyle(
-              fontSize: 50,
-              fontFamily: 'Aesthetic',
-              color: Color.fromARGB(255, 147, 194, 191),
-            ),
-          ),
-          Text(
-            'Bem vindo!',
+              fontSize: 20,
+              color: Color.fromARGB(255, 255, 255, 255),
+            )),
+           SizedBox(height: 600),
+          Text('App feito por Luiz Felipe Bastião',
             style: TextStyle(
-              fontSize: 50,
-              fontFamily: 'Outfielder',
-              color: Color.fromARGB(255, 147, 194, 191),
-            ),
-          ),
-          Text(
-            'Bem vindo!',
-            style: TextStyle(
-              fontSize: 50,
-              fontFamily: 'Squarish',
-              color: Color.fromARGB(255, 147, 194, 191),
+              fontSize: 20,
+            
+              color: Color.fromARGB(255, 255, 255, 255),
             ),
           ),
         ],
