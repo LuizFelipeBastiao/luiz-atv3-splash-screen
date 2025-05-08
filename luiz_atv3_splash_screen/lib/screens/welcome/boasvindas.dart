@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Widget boasVindas() {
   return Container(
     // Container para o fundo
-    color: const Color.fromARGB(255, 42, 77, 215),
+    color: const Color.fromARGB(255, 19, 35, 99),
     child: const Center(
       child: Column(
         // Centraliza o conteúdo na tela

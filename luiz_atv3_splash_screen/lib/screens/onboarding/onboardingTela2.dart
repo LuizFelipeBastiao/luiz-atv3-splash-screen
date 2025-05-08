@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
-class TelaOnboarding2 extends StatelessWidget {
-  const TelaOnboarding2({super.key});
+class TelaOnboarding2 extends StatefulWidget{
+  const TelaOnboarding2({Key? key}) : super(key: key);
 
+  @override
+  State<TelaOnboarding2> createState() => _TelaOnboarding2State();
+} 
+
+class _TelaOnboarding2State extends State<TelaOnboarding2> {
   @override
   Widget build(BuildContext context) {
     return Container(
       color: const Color.fromARGB(255, 11, 134, 25),
-      child: const Center(
+      child:  Center(
         child: Column(
           children: [
-            SizedBox(height: 120),
-            Text(
+            const SizedBox(height: 120),
+            const Text(
               'OnBoarding',
               style: TextStyle(
                 fontSize: 50,
@@ -20,7 +26,7 @@ class TelaOnboarding2 extends StatelessWidget {
               ),
             ),
             SizedBox(height: 60),
-            Text(
+            const Text(
               'O Widget Onboarding é uma ferramenta que permite criar telas de introdução para aplicativos móveis.',
               style: TextStyle(
                 fontSize: 20,
@@ -29,8 +35,8 @@ class TelaOnboarding2 extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Onboarding tem um parametro chamado swipableBody que é uma lista de widgets que podem ser arrastados horizontalmente.',
               style: TextStyle(
                 fontSize: 20,
@@ -40,11 +46,7 @@ class TelaOnboarding2 extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 20),
-            Icon(
-              Icons.send_to_mobile,
-              size: 100,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
+            Lottie.asset('assets/animations/hand3.json')
           ],
         ),
       ),

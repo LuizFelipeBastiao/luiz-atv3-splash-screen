@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:luiz_atv3_splash_screen/screens/welcome/boasvindas.dart';
-import 'package:luiz_atv3_splash_screen/screens/onboarding/onboarding.dart';
+import 'package:luiz_atv3_splash_screen/screens/splash/splashOB.dart';
 
 class PaginaInicial extends StatefulWidget {
   const PaginaInicial({super.key});
@@ -13,11 +13,6 @@ class _PaginaInicialState extends State<PaginaInicial> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Página Inicial'),
-        automaticallyImplyLeading: false,
-      ),
-
       body: Stack(
         //Boas vindas e botão que leva para a tela de onboarding
         // são separados e empilhados um sobre o outro
@@ -27,13 +22,25 @@ class _PaginaInicialState extends State<PaginaInicial> {
             child: Column(
               children: [
                 const SizedBox(height: 400),
-                TextButton(
+                  TextButton(
                   // Botão para ir para a tela de onboarding
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => const TelaOnboarding(),
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) =>  const TelaSplash(),
+                        transitionDuration: const Duration(milliseconds: 500),
+                        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                          const inicio = Offset(0.0, 1.0);
+                          const fim = Offset.zero;
+                          const curva = Curves.fastLinearToSlowEaseIn;
+
+                          var tween = Tween(begin: inicio, end: fim).chain(CurveTween(curve:curva));
+                          var offsetAnimation = animation.drive(tween);
+
+                          return SlideTransition(position: offsetAnimation,
+                          child : child);
+                        },
                       ),
                     );
                   },
